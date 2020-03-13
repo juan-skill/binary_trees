@@ -7,15 +7,11 @@
   */
 int binary_tree_is_root(const binary_tree_t *node)
 {
-	/* binary_tree_print(node); */
-	/* printf("\n\n"); */
-	/* if (node == NULL) */
-	if (!node)
+	if (node == NULL)
 		return (0);
 
 	if (node->parent)
 		return (0);
 
 	return (1);
-	/* return (!node && node->parent ? 0 : 1); */
 }

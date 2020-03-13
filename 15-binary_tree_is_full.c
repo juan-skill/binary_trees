@@ -7,13 +7,9 @@
  */
 int traverse_full(const binary_tree_t *tree)
 {
-	/* int left, right; */
-
-	/* left = 0; */
-	/* right = 0; */
 	if (!tree)
 		return (1);
-	/* { */
+
 	if ((tree->left && !tree->right) || (!tree->left && tree->right))
 		return (0);
 	/* left = traverse_full(tree->left); */
@@ -22,8 +18,6 @@ int traverse_full(const binary_tree_t *tree)
 		return (0);
 	else
 		return (1);
-	/* } */
-	/* return (1); */
 }
 
 /**
